@@ -1,0 +1,9 @@
+
+[Unit]
+Description=Connect_to_VPN
+After=systemd-user-sessions.service
+[Service]
+Type=oneshot
+ExecStart=/bin/bash '/home/lol/Templates/con.sh'
+[Install]
+WantedBy=multi-user.target
